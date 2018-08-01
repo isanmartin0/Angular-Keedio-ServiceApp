@@ -9,7 +9,7 @@ export class HelloComponent implements OnInit {
 
   nombre: string;
   constructor() {
-    this.nombre = 'Iñigo'
+    this.nombre = 'Angular'
   }
 
   ngOnInit() {

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule} from '@angular/common/http';
-import { RouterModule, Route } '@angular/router';
+
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
@@ -9,12 +9,9 @@ import { HelloComponent } from './hello/hello.component';
 import { DataService } from './data.service';
 import { AboutComponent } from './about/about.component';
 import { PostsComponent } from './posts/posts.component';
+import { AppRoutingModule } from './/app-routing.module';
 
-const routes: Route = [
-  {path: '', component: HelloComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'posts', component: PostsComponent}
-]
+
 
 @NgModule({
   declarations: [
@@ -26,7 +23,7 @@ const routes: Route = [
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    AppRoutingModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

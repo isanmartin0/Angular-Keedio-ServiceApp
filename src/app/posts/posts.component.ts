@@ -11,12 +11,17 @@ export class PostsComponent implements OnInit {
   posts = [];
 
   constructor(private dataService: DataService) {
-    this.dataService.getData().subscribe( data => {
-      this.posts = data;
-    });
+
   }
 
   ngOnInit() {
+    this.getPosts();
+  }
+
+  getPosts(): void {
+    this.dataService.getData().subscribe( data => {
+      this.posts = data;
+    });
   }
 
 }
