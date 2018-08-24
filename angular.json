@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-Keedio-FirstApp": {
+    "Angular-Keedio-ServiceApp": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular-Keedio-FirstApp:build"
+            "browserTarget": "Angular-Keedio-ServiceApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular-Keedio-FirstApp:build:production"
+              "browserTarget": "Angular-Keedio-ServiceApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular-Keedio-FirstApp:build"
+            "browserTarget": "Angular-Keedio-ServiceApp:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "Angular-Keedio-FirstApp-e2e": {
+    "Angular-Keedio-ServiceApp-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular-Keedio-FirstApp:serve"
+            "devServerTarget": "Angular-Keedio-ServiceApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular-Keedio-FirstApp:serve:production"
+              "devServerTarget": "Angular-Keedio-ServiceApp:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "Angular-Keedio-FirstApp"
+  "defaultProject": "Angular-Keedio-ServiceApp"
 }
